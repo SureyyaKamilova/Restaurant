@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurant.Interfaces
+namespace Restaurant.Abstract
 {
-    public interface IAdminService:IService<Admin>
+    public interface IAdminService:IBaseService<Admin>
     {
         void Update(Admin admin);
         void Delete(Admin admin);

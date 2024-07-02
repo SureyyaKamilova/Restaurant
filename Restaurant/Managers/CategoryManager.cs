@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurant.Interfaces
+namespace Restaurant.Managers
 {
-    public interface IService<T> where T : class,IEntity
+    internal class CategoryManager:AbstractCategoryManager
     {
-        void Add(T t);
-        
     }
 }

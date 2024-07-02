@@ -1,13 +1,13 @@
-﻿using Restaurant.Interfaces;
+﻿using Restaurant.Users;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurant.Users
+namespace Restaurant.Abstract
 {
-    public class Admin:UserBase,IEntity
+    public interface IWaiterService:IBaseService<Waiter>
     {
     }
 }

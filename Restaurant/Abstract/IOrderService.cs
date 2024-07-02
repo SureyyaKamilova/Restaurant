@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurant.Interfaces
+namespace Restaurant.Abstract
 {
-    public interface IOrderService:IService<Order>
+    public interface IOrderService:IBaseService<Order>
     {
         void Update(Order order);
         void Delete(Order order);

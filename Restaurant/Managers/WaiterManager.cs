@@ -1,4 +1,5 @@
-﻿using Restaurant.Interfaces;
+﻿using Restaurant.Abstract;
+using Restaurant.Entities;
 using Restaurant.Users;
 using System;
 using System.Collections.Generic;
@@ -10,9 +11,24 @@ namespace Restaurant.Managers
 {
     public class WaiterManager : IWaiterService
     {
-        public void Add(Waiter waiter)
+        public void Add(Product product)
         {
-            Console.WriteLine($"{waiter.FullName} added" );
+            throw new NotImplementedException();
+        }
+
+        public void Delete(Product product)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Waiter> GetAll()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Update(Product product)
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Restaurant.Interfaces;
+﻿using Restaurant.Abstract;
+using Restaurant.Entities;
 using Restaurant.Users;
 using System;
 using System.Collections.Generic;
@@ -10,19 +11,34 @@ namespace Restaurant.Managers
 {
     public class AdminManager : IAdminService
     {
-        public void Add(Admin admin)
+        public void Add(Product product)
         {
-            Console.WriteLine($"{admin.FullName} added");
+            throw new NotImplementedException();
         }
 
         public void Delete(Admin admin)
         {
-            Console.WriteLine($"{admin.FullName} added");
+            throw new NotImplementedException();
+        }
+
+        public void Delete(Product product)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Admin> GetAll()
+        {
+            throw new NotImplementedException();
         }
 
         public void Update(Admin admin)
         {
-            Console.WriteLine($"{admin.FullName} added");
+            throw new NotImplementedException();
+        }
+
+        public void Update(Product product)
+        {
+            throw new NotImplementedException();
         }
     }
 }

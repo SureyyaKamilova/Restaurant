@@ -1,5 +1,5 @@
 ﻿using Restaurant.Entities;
-using Restaurant.Interfaces;
+using Restaurant.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,7 @@ namespace Restaurant.Managers
 {
     public class OrderManager : IOrderService
     {
-        public void Add(Order order)
+        public void Add(Product product)
         {
             throw new NotImplementedException();
         }
@@ -20,7 +20,22 @@ namespace Restaurant.Managers
             throw new NotImplementedException();
         }
 
+        public void Delete(Product product)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Order> GetAll()
+        {
+            throw new NotImplementedException();
+        }
+
         public void Update(Order order)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Update(Product product)
         {
             throw new NotImplementedException();
         }

@@ -1,0 +1,17 @@
+﻿using Restaurant.Abstract;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Restaurant.Entities
+{
+    public class Product:IEntity
+    {
+        public int CategoryId { get; set; }
+        public string ProductName { get; set; }
+        public string ProductDescription { get; set; }
+        public int Price { get; set; }
+    }
+}

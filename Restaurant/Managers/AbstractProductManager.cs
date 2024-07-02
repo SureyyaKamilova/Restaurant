@@ -1,6 +1,5 @@
 ﻿using Restaurant.Abstract;
 using Restaurant.Entities;
-using Restaurant.Users;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,19 +8,25 @@ using System.Threading.Tasks;
 
 namespace Restaurant.Managers
 {
-    public class CashierManager : ICashierService
+    internal abstract class AbstractProductManager : IProductService
     {
-        public void Add(Product product)
+        public virtual void Add(Product product)
+        {
+            Console.WriteLine($"{product.ProductName} added");
+
+        }
+
+        public  void Delete(Product product)
         {
             throw new NotImplementedException();
         }
 
-        public void Delete(Product product)
+        public List<Product> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public List<Cashier> GetAll()
+        public List<Product> GetAllByCategoryId(int categoryId)
         {
             throw new NotImplementedException();
         }

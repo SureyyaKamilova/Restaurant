@@ -1,4 +1,4 @@
-﻿using Restaurant.Interfaces;
+﻿using Restaurant.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace Restaurant.Users
 {
-    public class Waiter:UserBase,IEntity
+    public class Admin:BaseEntity,IEntity
     {
+        public string Role { get; set; }
     }
 }

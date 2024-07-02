@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurant.Entities
+namespace Restaurant.Abstract
 {
-    public class Category
+    public interface IEntity
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
     }
 }

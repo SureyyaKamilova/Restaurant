@@ -1,4 +1,4 @@
-﻿using Restaurant.Interfaces;
+﻿using Restaurant.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,11 +7,9 @@ using System.Threading.Tasks;
 
 namespace Restaurant.Entities
 {
-    public class Order:IEntity
+    public class Category:IEntity
     {
         public int Id { get; set; }
-        public string OrderNo { get; set; }
-        public string OrderDescription { get; set; }
-
+        public string Name { get; set; }
     }
 }

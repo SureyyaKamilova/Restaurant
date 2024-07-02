@@ -1,33 +1,24 @@
 ﻿using Restaurant.Entities;
-using Restaurant.Interfaces;
+using Restaurant.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Restaurant.Users;
 
 namespace Restaurant.Managers
 {
-    public class ProductManager : IProductService
+    internal class ProductManager(ICheckRoleService checkRoleService,Admin admin) : AbstractProductManager
     {
-        public void Add(Product product)
-        {
-            throw new NotImplementedException();
-        }
+        private readonly ICheckRoleService _roleService;
 
-        public void Delete(Product product)
+        public override void Add(Product product)
         {
-            throw new NotImplementedException();
-        }
-
-        public void GetAll()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Update(Product product)
-        {
-            throw new NotImplementedException();
+            if(_roleService.CheckAdminRole(admin))
+                 base.Add(product);
+            else
+                Console.WriteLine("You do not have permission for this process");
         }
     }
 }

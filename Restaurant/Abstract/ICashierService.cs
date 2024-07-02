@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Restaurant.Interfaces
+namespace Restaurant.Abstract
 {
-    public interface IWaiterService:IService<Waiter>
+    public interface ICashierService:IBaseService<Cashier>
     {
     }
 }
